@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- header start -->
-    <div class="header">
+    <div class="header" id="home">
       <div class="header__navigation">
         <nav class="nav">
           <div class="nav__logo">
@@ -28,25 +28,29 @@
           </div>
           <ul class="nav__ul">
             <li class="nav__item">
-              <a href="#" class="nav__link">Home</a>
+              <a href="#home" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Elements</a>
+              <a href="#services" class="nav__link">Services</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Features</a>
+              <a href="#about" class="nav__link">About us</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Page</a>
+              <a href="#features" class="nav__link">Features</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Portfolio</a>
+              <a href="#prices" class="nav__link">Prices</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#blog" class="nav__link">Blog</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Blog</a>
+              <a href="#clients" class="nav__link">Clients</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Shop</a>
+              <a href="#contact" class="nav__link">Contact Us</a>
             </li>
           </ul>
           <div class="nav__burger">
@@ -62,13 +66,13 @@
         </nav>
       </div>
       <div class="header__text">
-        <h1 class="heading-primary">
+        <h1 class="heading-primary animation__left">
           <span class="heading-primary--small"
             >Trusted by over 40,000 satisfied users</span
           >
           <span class="heading-primary--big">Welcome to Reacto</span>
         </h1>
-        <a href="#" class="btn btn--black">Get Started Now</a>
+        <a href="#" class="btn btn--black animation__down">Get Started Now</a>
       </div>
     </div>
     <!-- header end -->
@@ -76,7 +80,7 @@
     <!-- main start -->
     <main>
       <!-- section 1 start -->
-      <div class="section-1">
+      <div class="section-1" id="services">
         <div class="section-1__box">
           <div class="section-1__icon">
             <i class="fas fa-search fa-3x section-1__icon-1"></i>
@@ -117,7 +121,7 @@
       <!-- section-1 end -->
 
       <!-- section-2 -->
-      <section class="section-2">
+      <section class="section-2" id="about">
         <h2 class="heading-standerd u-text-center u-margin-bottom-big">
           about us
         </h2>
@@ -175,7 +179,7 @@
       <!-- section-2 end -->
 
       <!-- section-3 start -->
-      <section class="section-3">
+      <section class="section-3" id="features">
         <div class="row-2">
           <div class="col-4-of-1">
             <div class="work-card">
@@ -238,7 +242,7 @@
       <!-- section-3 end -->
 
       <!-- section-4 start -->
-      <section class="section-4">
+      <section class="section-4" id="prices">
         <h2 class="heading-standerd u-text-center u-margin-bottom-big">
           Here Some of our best offer
         </h2>
@@ -310,7 +314,7 @@
         </div>
       </section>
       <!-- section-4 end -->
-      <section class="section-6">
+      <section class="section-6" id="blog">
         <h2 class="heading-standerd u-margin-bottom-big u-text-center">
           Our Blog
         </h2>
@@ -373,7 +377,7 @@
       </section>
 
       <!-- section 5 start -->
-      <section class="section-5">
+      <section class="section-5" id="clients">
         <h2 class="heading-standerd u-text-center u-margin-bottom-big">
           Our Clients
         </h2>
@@ -427,7 +431,7 @@
       <!-- section-6 start -->
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="row-3">
         <div class="col-3-of-1">
           <h2 class="heading-secondary u-margin-bottom-small">Reactod</h2>
@@ -455,7 +459,7 @@
             </li>
             <li class="footer__item">
               <a href="#" class="footer__link">
-                <i class="fas fa-phone footer__icon"></i> (+888)984858475
+                <i class="fas fa-phone footer__icon"></i> (+888) 01633734181
               </a>
             </li>
             <li class="footer__item">
@@ -484,6 +488,16 @@
       </div>
     </footer>
     <!-- javaScript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
+      integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./app.js"></script>
   </body>
 </html>
