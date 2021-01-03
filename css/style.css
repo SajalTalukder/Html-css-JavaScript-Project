@@ -23,7 +23,6 @@ ORDER : Base + Typography > general layout + grid >page layout >component
 }
 
 html {
-  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 @media only screen and (max-width: 75em) {
@@ -40,7 +39,8 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family: "Roboto", sans-serif;
 }
 @media only screen and (max-width: 75em) {
   body {
@@ -258,6 +258,7 @@ img {
 @media only screen and (max-width: 56.25em) {
   .composition__img-box {
     display: flex;
+    justify-content: center;
     margin-right: auto;
   }
 }
@@ -300,7 +301,7 @@ img {
 
 .work-card {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 4rem;
+  padding: 2rem;
   border-radius: 10px;
   text-align: center;
   transition: all 0.3s;
@@ -322,11 +323,7 @@ img {
   border: 1px solid rgba(156, 156, 156, 0.3);
   transition: all 0.4s;
 }
-@media only screen and (max-width: 56.25em) {
-  .card {
-    width: 80%;
-  }
-}
+
 .card__bg--1 {
   background-blend-mode: multiply;
   -webkit-background-blend-mode: multiply;
@@ -458,6 +455,7 @@ img {
 }
 
 .header {
+  overflow: hidden;
   height: 90vh;
   background: linear-gradient(
       -90deg,
@@ -621,7 +619,7 @@ img {
   .nav__link {
     display: block;
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     color: white;
     font-weight: 600;
     text-transform: uppercase;
@@ -711,13 +709,12 @@ img {
 .row-3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 100rem;
+
   gap: 6rem;
   margin: 0 auto;
 }
 @media only screen and (max-width: 75em) {
   .row-3 {
-    width: 80rem;
     margin: auto;
   }
 }
@@ -847,11 +844,17 @@ img {
   background-color: #f8f6f6;
 }
 @media only screen and (max-width: 56.25em) {
+  .section-2 {
+    padding: 15rem 3rem 25rem 3rem;
+  }
   .section-2 p {
     width: 60rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
+  .section-3 {
+    padding: 20rem 5rem;
+  }
   .section-2 p {
     width: 80%;
   }
@@ -874,6 +877,9 @@ img {
   transform: skewY(7deg);
 }
 @media only screen and (max-width: 56.25em) {
+  .section-3 {
+    padding: 20rem 10rem;
+  }
   .section-3 p {
     width: 60%;
     margin: auto;
@@ -914,4 +920,54 @@ img {
 }
 .section-6 > * {
   transform: skewY(7deg);
+}
+.top-bottom {
+  position: fixed;
+  right: 5%;
+  bottom: 15%;
+  font-size: 3rem;
+  background-color: rgb(0, 0, 0);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.top-bottom.top-bottom__show {
+  display: flex;
+}
+.top-bottom__link {
+  color: #d4d4d4;
+}
+
+@keyframes animation__left {
+  0% {
+    transform: translateX(30rem);
+  }
+  50% {
+    transform: translateX(-5rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes animation__down {
+  0% {
+    transform: translateY(10rem);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.heading__animation-left {
+  animation: animation__left 1.4s ease;
+}
+.heading__animation-down {
+  animation: animation__down 1.4s ease;
 }
